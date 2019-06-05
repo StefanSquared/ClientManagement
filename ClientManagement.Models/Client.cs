@@ -15,7 +15,7 @@ namespace ClientManagement.Models
 
 		[Required, Column(TypeName = "datetime2"),
 		 DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd.MM.yyyy}")]
-		public DateTime BirthDate { get; set; }
+		public DateTime BirthDate { get; set; } = DateTime.Now;
 
 		public string Addresses { get; set; }
 
